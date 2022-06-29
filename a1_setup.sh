@@ -1,5 +1,7 @@
 #!/bin/bash
 
+
+
 mv lcm ~/
 mv unitree_legged_sdk ~/
 mv gazebo_ros_pkgs ~/catkin_ws/src/
@@ -50,6 +52,8 @@ echo "#export ALIENGO_SDK_PATH=~/aliengo_sdk" >> ~/.bashrc
 echo "# amd64, arm32, arm64" >> ~/.bashrc
 echo "export UNITREE_PLATFORM="amd64"" >> ~/.bashrc
 echo "export LCM_PATH=/usr/local/lib/liblcm.so.1" >> ~/.bashrc
+
+sudo ldconfig -v
 
 cd ~/catkin_ws
 catkin build unitree_legged_msgs
