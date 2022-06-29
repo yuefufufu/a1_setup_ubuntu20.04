@@ -53,6 +53,7 @@ echo "# amd64, arm32, arm64" >> ~/.bashrc
 echo "export UNITREE_PLATFORM="amd64"" >> ~/.bashrc
 echo "export LCM_PATH=/usr/local/lib/liblcm.so.1" >> ~/.bashrc
 
+apt install idconfig
 sudo ldconfig -v
 
 cd ~/catkin_ws
