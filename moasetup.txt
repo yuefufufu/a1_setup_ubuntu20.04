@@ -1,10 +1,10 @@
 sudo su
-
 source /home/yue/catkin_ws/devel/setup.bash
-
 roslaunch unitree_legged_real realtest.launch rname:=a1 ctrl_level:=highlevel firmwork:=3_2
-
 rosrun unitree_legged_real keyconfig.py cmd_vel:=/cmd_vel
+
+
+
 
 catkin build unitree_legged_real 
 
