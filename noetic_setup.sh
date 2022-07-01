@@ -14,6 +14,7 @@ sudo apt install python3-osrf-pycommon python3-catkin-tools
 sudo apt upgrade
 sudo rosdep init
 rosdep update
+source ~/.bashrc
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/
 catkin build
