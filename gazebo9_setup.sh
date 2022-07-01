@@ -19,5 +19,7 @@ git clone https://github.com/ros-simulation/gazebo_ros_pkgs.git -b noetic-devel
 rosdep update
 cd ~/catkin_ws
 catkin build
-
+cd
 source .bashrc
+
+gazebo -v

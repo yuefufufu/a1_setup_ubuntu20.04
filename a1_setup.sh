@@ -1,25 +1,8 @@
+#!/bin/bash
 
-
-cd 
-mv gazebo_ros_pkgs ~/catkin_ws/src/
-
-cd
-sudo 
-sudo apt remove ros-noetic-gazebo*
-sudo apt remove libgazebo*
-sudo apt remove gazebo*
-sudo apt install gazebo9*
-
-cd ~/catkin_ws/src
-rosdep update
-rosdep check --from-paths . --ignore-src --rosdistro noetic
-rosdep install --from-paths . --ignore-src --rosdistro noetic -y
-
-cd ~/catkin_ws/
-catkin build
-
-source /opt/ros/noetic/setup.bash
-source ~/catkin_ws/devel/setup.bash
+cd ~/a1_setup_ubuntu20.04
+mv lcm ~/
+mv unitree_legged_sdk ~/
 
 cd ~/lcm
 mkdir build
@@ -50,9 +33,8 @@ echo "# amd64, arm32, arm64" >> ~/.bashrc
 echo "export UNITREE_PLATFORM="amd64"" >> ~/.bashrc
 echo "export LCM_PATH=/usr/local/lib/liblcm.so.1" >> ~/.bashrc
 
-apt install idconfig
-sudo ldconfig -v
+sudo apt-get install ros-noetic-controller-interface ros-noetic-joint-state-controller ros-noetic-effort-controllers ros-noetic-joint-trajectory-controller
+sudo apt install net-tools
+sudo apt install ipmiutil
 
-cd ~/catkin_ws
-catkin build unitree_legged_msgs
-catkin build 
+reboot
