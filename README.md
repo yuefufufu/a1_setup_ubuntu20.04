@@ -12,7 +12,7 @@ ubuntu20.04であれば以下のスクリプトを順番に実行すれば環境
 
 スクリプトの実行前にターミナル上で[sudo apt upgrade][sudo apt upgrade][sudo apt-get install git][sudo apt-get install vim]を実行してください。
 
-[git clone https://github.com/yuefufufu/a1_setup_ubuntu20.04.git]　であなたのpcにファイルをコピーしてください。
+[git clone https://github.com/yuefufufu/a1_setup_ubuntu20.04.git]、であなたのpcにファイルをコピーしてください。
 
 [cd a1_setup_ubuntu20.04]でコピーしたファイル内に入り、スクリプトを実行[bash xxxx.sh]してください。
 
