@@ -24,6 +24,8 @@ ubuntu20.04であれば以下のスクリプトを順番に実行すれば環境
 
 表示はターミナル上で[ctrl+c]を入力すると消えます。
 
+エラーが出る場合は[cd][source .bashrc][cd catkin_ws][catkin build][cd][roscore]を順に実行してみてください。
+
 ### gazebo9_setup.sh
 
 このスクリプトを実行するとgazeboのバージョンが9に変更されます。(noeticは本来11。)
