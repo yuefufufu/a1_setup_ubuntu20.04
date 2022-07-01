@@ -22,4 +22,6 @@ source ~/.bashrc
 catkin build
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
 source ~/.bashrc
+cd
+sudo apt install joint-state-publisher
 roscore
