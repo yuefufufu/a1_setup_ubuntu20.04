@@ -1,9 +1,6 @@
-#!/bin/bash
 
 
-
-mv lcm ~/
-mv unitree_legged_sdk ~/
+cd 
 mv gazebo_ros_pkgs ~/catkin_ws/src/
 
 cd
@@ -59,4 +56,3 @@ sudo ldconfig -v
 cd ~/catkin_ws
 catkin build unitree_legged_msgs
 catkin build 
-
