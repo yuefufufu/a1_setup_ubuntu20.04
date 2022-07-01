@@ -33,7 +33,7 @@ cd build
 cmake ../
 make
 
-cd ~/a1_setup
+cd ~/a1_setup_ubuntu20.04
 mv unitree_ros ~/catkin_ws/src/
 mv unitree_ros_to_real ~/catkin_ws/src/
 
