@@ -36,6 +36,5 @@ echo "export LCM_PATH=/usr/local/lib/liblcm.so.1" >> ~/.bashrc
 sudo apt-get install -y ros-noetic-controller-interface ros-noetic-joint-state-controller ros-noetic-effort-controllers ros-noetic-joint-trajectory-controller
 sudo apt install -y net-tools
 sudo apt install -y ipmiutil
-sudo apt install -y ros-noetic-joint-state-publisher-gui
 
 reboot
