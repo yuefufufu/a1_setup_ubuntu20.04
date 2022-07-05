@@ -20,11 +20,11 @@ ubuntu20.04であれば以下のスクリプトを順番に実行すれば環境
 
 このスクリプトを実行するとROS noeticの環境が構築されます。
 
-スクリプトの最後で[roscore]が実行され、ROSのバージョン等が表示されます。
+スクリプト実行後の端末で[cd][source .bashrc][cd catkin_ws][catkin build][cd][roscore]を順に実行してください。
+
+最後の[roscore]が実行により、ROSのバージョン等が表示されます。
 
 表示はターミナル上で[ctrl+c]を入力すると消えます。
-
-エラーが出る場合は[cd][source .bashrc][cd catkin_ws][catkin build][cd][roscore]を順に実行してみてください。
 
 ### gazebo9_setup.sh
 
