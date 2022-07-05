@@ -52,9 +52,7 @@ gazeboはターミナル上で[ctrl+c]を入力すると動作を終了します
 
 ### ipconfig.sh(おまけ1)
 
-スクリプトの実行前に[sudo apt install net-tools]を入力してください。
-
-スクリプト内のポート名を書き換え、pcとUnitree A1をLANケーブルで繋ぎこのスクリプトを実行すると、pcのipアドレスのセットとUnitree A1との通信確認が行われます。ターミナル上で[ctrl+c]を入力すると通信確認を終了します。
+スクリプト内のポート名を書き換え、pcとUnitree A1をLANケーブルで繋ぎこのスクリプトを実行すると、pcとUnitree A1との通信確認が行われます。ターミナル上で[ctrl+c]を入力すると通信確認を終了します。
 
 ### moasetup.text(おまけ2)
 
