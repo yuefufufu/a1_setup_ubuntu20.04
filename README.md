@@ -10,7 +10,7 @@ https://github.com/unitreerobotics
 
 ubuntu20.04であれば以下のスクリプトを順番に実行すれば環境が構築されます。
 
-スクリプトの実行前にターミナル上で[sudo apt update][sudo apt upgrade][sudo apt-get install git][sudo apt-get install vim]を実行してください。
+スクリプトの実行前にターミナル上で[sudo apt update][sudo apt upgrade][sudo apt-get install git]を実行してください。
 
 [git clone https://github.com/yuefufufu/a1_setup_ubuntu20.04.git]　であなたのpcにファイルをコピーしてください。
 
@@ -52,7 +52,9 @@ gazeboはターミナル上で[ctrl+c]を入力すると動作を終了します
 
 ### ipconfig.sh(おまけ1)
 
-pcとUnitree A1をLANケーブルで繋ぎこのスクリプトを実行すると、pcのipアドレスのセットとUnitree A1との通信確認が行われます。ターミナル上で[ctrl+c]を入力すると通信確認を終了します。
+スクリプトの実行前に[sudo apt install net-tools]を入力してください。
+
+スクリプト内のポート名を書き換え、pcとUnitree A1をLANケーブルで繋ぎこのスクリプトを実行すると、pcのipアドレスのセットとUnitree A1との通信確認が行われます。ターミナル上で[ctrl+c]を入力すると通信確認を終了します。
 
 ### moasetup.text(おまけ2)
 
