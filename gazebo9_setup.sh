@@ -1,10 +1,10 @@
 #!/bin/bash
 
 cd
-sudo apt remove ros-noetic-gazebo*
-sudo apt remove libgazebo*
-sudo apt remove gazebo*
-sudo apt install gazebo9*
+sudo apt remove -y ros-noetic-gazebo*
+sudo apt remove -y libgazebo*
+sudo apt remove -y gazebo*
+sudo apt install -y gazebo9*
 
 cd ~/catkin_ws/src
 catkin_init_workspace
