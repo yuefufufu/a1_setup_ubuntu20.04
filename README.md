@@ -6,11 +6,11 @@ https://github.com/unitreerobotics
 
 ## 使い方
 
-これらのスクリプトはROS noeticの導入やUnitree A1(犬ロボ)の作業環境構築に役立ちます。
+これらのスクリプトはROS noeticの導入やUnitree A1(犬ロボ)の開発環境構築に役立ちます。
 
 ubuntu20.04であれば以下のスクリプトを順番に実行すれば環境が構築されます。
 
-スクリプトの実行前にターミナル上で[sudo apt upgrade][sudo apt upgrade][sudo apt-get install git][sudo apt-get install vim]を実行してください。
+スクリプトの実行前にターミナル上で[sudo apt update][sudo apt upgrade][sudo apt-get install git][sudo apt-get install vim]を実行してください。
 
 [git clone https://github.com/yuefufufu/a1_setup_ubuntu20.04.git]　であなたのpcにファイルをコピーしてください。
 
@@ -18,9 +18,11 @@ ubuntu20.04であれば以下のスクリプトを順番に実行すれば環境
 
 ### noetic_setup.sh
 
-このスクリプトを実行するとROS noeticの環境が構築されます。
+このスクリプトを実行する最後にエラーが表示されますが正常な動作です。
 
-スクリプトの最後で[roscore]が実行され、ROSのバージョン等が表示されます。
+スクリプト実行後の端末で[cd][source .bashrc][cd catkin_ws][catkin build][cd][roscore]を順に実行してください。
+
+最後の[roscore]が実行により、ROSのバージョン等が表示されます。
 
 表示はターミナル上で[ctrl+c]を入力すると消えます。
 
@@ -46,19 +48,15 @@ pcが再起動したら、このスクリプトを実行してください。
 
 gazeboはターミナル上で[ctrl+c]を入力すると動作を終了します。
 
-ここまでで、Unitree A1の作業環境構築は終了です。お疲れ様でした。
+これにて、Unitree A1の開発環境構築は終了です。お疲れ様でした。
 
 ### ipconfig.sh(おまけ1)
 
-pcとUnitree A1をLANケーブルで繋ぎこのスクリプトを実行すると、pcのipアドレスのセットとUnitree A1との通信確認が行われます。
-
-ターミナル上で[ctrl+c]を入力すると通信確認を終了します。
+pcとUnitree A1をLANケーブルで繋ぎこのスクリプトを実行すると、pcのipアドレスのセットとUnitree A1との通信確認が行われます。ターミナル上で[ctrl+c]を入力すると通信確認を終了します。
 
 ### moasetup.text(おまけ2)
 
-pcとUnitree A1が通信可能な状態で、同一ターミナル上で上3行のコマンドを順に実行し、別ターミナルで4行目を実行するとキーボード入力でUnitree A1が操作可能になります。
-
-遊んでみてください。
+pcとUnitree A1が通信可能な状態で、同一ターミナル上で上3行のコマンドを順に実行し、別ターミナルで4行目を実行するとキーボード入力でUnitree A1が操作可能になります。遊んでみてください。それと自分用のメモが色々書いてあるので有効活用できそうならしてみてください。
 
 ## How to use
 
