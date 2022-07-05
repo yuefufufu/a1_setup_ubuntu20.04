@@ -19,8 +19,3 @@ mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws/
 catkin build
 echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
-source ~/.bashrc
-catkin build
-cd
-sudo apt install joint-state-publisher
-roscore
