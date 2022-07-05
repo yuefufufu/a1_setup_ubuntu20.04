@@ -12,23 +12,21 @@ ubuntu20.04であれば以下のスクリプトを順番に実行すれば環境
 
 スクリプトの実行前にターミナル上で[sudo apt update][sudo apt upgrade][sudo apt-get install git]を実行してください。
 
-[git clone https://github.com/yuefufufu/a1_setup_ubuntu20.04.git]　であなたのpcにファイルをコピーしてください。
+[cd][git clone https://github.com/yuefufufu/a1_setup_ubuntu20.04.git]　であなたのpcのホームディレクトリにファイルをコピーしてください。
 
 [cd a1_setup_ubuntu20.04]でコピーしたファイル内に入り、スクリプトを実行[bash xxxx.sh]してください。
 
 ### noetic_setup.sh
 
-このスクリプトを実行する最後にエラーが表示されますが正常な動作です。
+このスクリプトを実行するとubuntu20.04環境にROS-noeticがインストールされます。
 
-スクリプト実行後の端末で[cd][source .bashrc][cd catkin_ws][catkin build][cd][roscore]を順に実行してください。
-
-最後の[roscore]が実行により、ROSのバージョン等が表示されます。
+最後の[roscore]の実行により、ROSのバージョン等が表示されます。
 
 表示はターミナル上で[ctrl+c]を入力すると消えます。
 
 ### gazebo9_setup.sh
 
-このスクリプトを実行するとgazeboのバージョンが9に変更されます。(noeticは本来11。)
+このスクリプトを実行するとgazeboのバージョンが9に変更されます(noeticは本来11)。
 
 スクリプトの最後で[gazebo -v]が実行され、gazeboのバージョンが表示されます。
 
