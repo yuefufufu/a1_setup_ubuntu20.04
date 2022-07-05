@@ -10,7 +10,7 @@ https://github.com/unitreerobotics
 
 ubuntu20.04であれば以下のスクリプトを順番に実行すれば環境が構築されます。
 
-スクリプトの実行前にターミナル上で[sudo apt update][sudo apt upgrade][sudo apt-get install -y git]を実行してください。
+スクリプトの実行前にターミナル上で[sudo apt update][sudo apt upgrade][sudo apt-get install -y git][reboot]を実行してください。
 
 [cd][git clone https://github.com/yuefufufu/a1_setup_ubuntu20.04.git]　であなたのpcのホームディレクトリにファイルをコピーしてください。
 
