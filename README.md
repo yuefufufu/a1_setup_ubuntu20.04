@@ -18,7 +18,7 @@ ubuntu20.04であれば以下のスクリプトを順番に実行すれば環境
 
 ### noetic_setup.sh
 
-このスクリプトを実行するとROS noeticの環境が構築されます。
+このスクリプトを実行する最後にエラーが表示されますが正常な動作です。
 
 スクリプト実行後の端末で[cd][source .bashrc][cd catkin_ws][catkin build][cd][roscore]を順に実行してください。
 
