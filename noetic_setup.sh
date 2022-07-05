@@ -7,14 +7,14 @@ curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.asc | sudo ap
 sudo apt update
 sudo apt install -y ros-noetic-desktop-full
 echo "source /opt/ros/noetic/setup.bash" >> ~/.bashrc
-source /opt/ros/melodic/setup.bash
+source /opt/ros/noetic/setup.bash
 sudo apt install -y python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
 sudo apt install -y python3-rosdep
 sudo apt install -y python3-osrf-pycommon python3-catkin-tools
 sudo apt upgrade -y
 sudo rosdep init
 rosdep update
-source /opt/ros/melodic/setup.bash
+source /opt/ros/noetic/setup.bash
 cd
 mkdir -p ~/catkin_ws/src
 cd ~/catkin_ws

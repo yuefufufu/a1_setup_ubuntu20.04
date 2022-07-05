@@ -13,13 +13,13 @@ catkin build
 
 cd
 sudo apt-get install -y libgazebo9-dev
-source .bashrc
 cd ~/catkin_ws/src
 git clone https://github.com/ros-simulation/gazebo_ros_pkgs.git -b noetic-devel
 rosdep update
 cd ~/catkin_ws
 catkin build
 cd
-source .bashrc
+source /opt/ros/noetic/setup.bash
+source ~/catkin_ws/devel/setup.bash
 
 gazebo -v
