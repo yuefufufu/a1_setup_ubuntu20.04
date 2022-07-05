@@ -28,7 +28,7 @@ ubuntu20.04であれば以下のスクリプトを順番に実行すれば環境
 
 このスクリプトを実行するとgazeboのバージョンが9に変更されます(noeticは本来11)。
 
-途中のcatkin buildで赤文字のWARNINGが出ます。また、catkin buildには4分くらいかかりますが正常です。
+途中のcatkin buildで赤文字のWARNINGが出ます。また、catkin buildには2分半くらいかかりますが正常です。(環境によってはもっと長いかも？)
 
 スクリプトの最後で[gazebo -v]が実行され、gazeboのバージョンが表示されます。
 
