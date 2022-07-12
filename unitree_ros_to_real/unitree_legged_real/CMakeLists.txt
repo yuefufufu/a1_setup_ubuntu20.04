@@ -40,7 +40,7 @@ elseif( $ENV{UNITREE_SDK_VERSION} STREQUAL "3_2")
     add_definitions(-DSDK3_2)
 
     add_executable(lcm_server_3_2 $ENV{UNITREE_LEGGED_SDK_PATH}/examples/lcm_server.cpp)
-    target_link_libraries(lcm_server_3_2 ${EXTRA_LIBS} ${catkin_LIBRARIES})
+    target_link_libraries(lcm_server_3_2 ${EXTRA_LIBS} ${catkin_LIBRARIES} $ENV{LCM_PATH})
     add_dependencies(lcm_server_3_2 ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 endif()
 
@@ -59,3 +59,32 @@ add_dependencies(torque_lcm ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTE
 add_executable(walk_lcm src/exe/walk_mode.cpp)
 target_link_libraries(walk_lcm ${EXTRA_LIBS} ${catkin_LIBRARIES})
 add_dependencies(walk_lcm ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_executable(test_lcm src/test/test.cpp)
+target_link_libraries(test_lcm ${EXTRA_LIBS} ${catkin_LIBRARIES})
+add_dependencies(test_lcm ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_executable(test1_lcm src/test/test1.cpp)
+target_link_libraries(test1_lcm ${EXTRA_LIBS} ${catkin_LIBRARIES})
+add_dependencies(test1_lcm ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_executable(test2_lcm src/test/test2.cpp)
+target_link_libraries(test2_lcm ${EXTRA_LIBS} ${catkin_LIBRARIES})
+add_dependencies(test2_lcm ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_executable(test3_lcm src/test/test3.cpp)
+target_link_libraries(test3_lcm ${EXTRA_LIBS} ${catkin_LIBRARIES})
+add_dependencies(test3_lcm ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_executable(pub_test src/test/pub_test.cpp)
+target_link_libraries(pub_test ${EXTRA_LIBS} ${catkin_LIBRARIES})
+add_dependencies(pub_test ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_executable(sub_test src/test/sub_test.cpp)
+target_link_libraries(sub_test ${EXTRA_LIBS} ${catkin_LIBRARIES})
+add_dependencies(sub_test ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
+add_executable(A1_move src/test/A1_move.cpp)
+target_link_libraries(A1_move ${EXTRA_LIBS} ${catkin_LIBRARIES})
+add_dependencies(A1_move ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+
