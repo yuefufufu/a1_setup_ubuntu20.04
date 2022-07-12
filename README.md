@@ -10,25 +10,25 @@ https://github.com/unitreerobotics
 
 ubuntu20.04であれば以下のスクリプトを順番に実行すれば環境が構築されます。
 
-スクリプトの実行前にターミナル上で[sudo apt update][sudo apt upgrade][sudo apt-get install git][sudo apt-get install vim]を実行してください。
+スクリプトの実行前にターミナル上で[sudo apt update][sudo apt upgrade][sudo apt-get install -y git][reboot]を実行してください。
 
-[git clone https://github.com/yuefufufu/a1_setup_ubuntu20.04.git]　であなたのpcにファイルをコピーしてください。
+[cd][git clone https://github.com/yuefufufu/a1_setup_ubuntu20.04.git]　であなたのpcのホームディレクトリにファイルをコピーしてください。
 
 [cd a1_setup_ubuntu20.04]でコピーしたファイル内に入り、スクリプトを実行[bash xxxx.sh]してください。
 
 ### noetic_setup.sh
 
-このスクリプトを実行する最後にエラーが表示されますが正常な動作です。
+このスクリプトを実行するとubuntu20.04環境にROS-noeticがインストールされます。
 
-スクリプト実行後の端末で[cd][source .bashrc][cd catkin_ws][catkin build][cd][roscore]を順に実行してください。
-
-最後の[roscore]が実行により、ROSのバージョン等が表示されます。
+最後の[roscore]の実行により、ROSのバージョン等が表示されます。
 
 表示はターミナル上で[ctrl+c]を入力すると消えます。
 
 ### gazebo9_setup.sh
 
-このスクリプトを実行するとgazeboのバージョンが9に変更されます。(noeticは本来11。)
+このスクリプトを実行するとgazeboのバージョンが9に変更されます(noeticは本来11)。
+
+途中のcatkin buildで赤文字のWARNINGが出ます。また、catkin buildには2分半くらいかかりますが正常です。(環境によってはもっと長いかも？)
 
 スクリプトの最後で[gazebo -v]が実行され、gazeboのバージョンが表示されます。
 
@@ -52,7 +52,7 @@ gazeboはターミナル上で[ctrl+c]を入力すると動作を終了します
 
 ### ipconfig.sh(おまけ1)
 
-pcとUnitree A1をLANケーブルで繋ぎこのスクリプトを実行すると、pcのipアドレスのセットとUnitree A1との通信確認が行われます。ターミナル上で[ctrl+c]を入力すると通信確認を終了します。
+スクリプト内のポート名を書き換え、pcとUnitree A1をLANケーブルで繋ぎこのスクリプトを実行すると、pcとUnitree A1との通信確認が行われます。ターミナル上で[ctrl+c]を入力すると通信確認を終了します。
 
 ### moasetup.text(おまけ2)
 
